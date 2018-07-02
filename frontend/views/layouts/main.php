@@ -38,8 +38,8 @@ AppAsset::register($this);
             <li class="active"><a href="index.html">Home</a></li>
             <li><a href="#">Despre noi</a></li>
             <li><?= Html::a('Cosmetica', ['/site/categories', 'id' => 1])?></li>
-            <li><a href="#">Corporal</a></li>   
-            <li><a href="#">Programe</a></li>
+            <li><?= Html::a('Corporal', ['/site/categories', 'id' => 2])?></li>   
+            <li><?= Html::a('Programe', ['/site/categories', 'id' => 3])?></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
           <div class="extra-text visible-xs"> 
