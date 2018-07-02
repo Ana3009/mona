@@ -35,7 +35,7 @@ AppAsset::register($this);
 
         <nav role="navigation" class="probootstrap-nav hidden-xs">
           <ul class="probootstrap-main-nav">
-            <li class="active"><?= Html::a('Home', ['/site/index'])?></li>
+            <li><?= Html::a('Home', ['/site/index'])?></li>
             <li><?= Html::a('Despre noi', ['/site/about'])?></li>
             <li><?= Html::a('Cosmetica', ['/site/categories', 'id' => 1])?></li>
             <li><?= Html::a('Corporal', ['/site/categories', 'id' => 2])?></li>   
@@ -69,6 +69,18 @@ AppAsset::register($this);
       </div>
     </div>
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $.each($('nav ul li a'), function() {
+        console.log($(this).attr('href').split('/mona').pop());
+        console.log(window.location.href.split('/mona').pop());
+        if ($(this).attr('href').split('/mona').pop() === window.location.href.split('/mona').pop()) {
+          $(this).parent().addClass('active');
+        }
+      });
+    });
+  </script>
 <?php $this->endBody() ?>
 </body>
 </html>
