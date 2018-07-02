@@ -36,16 +36,10 @@ AppAsset::register($this);
         <nav role="navigation" class="probootstrap-nav hidden-xs">
           <ul class="probootstrap-main-nav">
             <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="about.html">Despre noi</a></li>
-            <li><div class="dropdown"> 
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Servicii </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                </div>
-            </li>
+            <li><a href="#">Despre noi</a></li>
+            <li><?= Html::a('Cosmetica', ['/site/categories', 'id' => 1])?></li>
+            <li><a href="#">Corporal</a></li>   
+            <li><a href="#">Programe</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
           <div class="extra-text visible-xs"> 
