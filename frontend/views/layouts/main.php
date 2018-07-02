@@ -28,19 +28,19 @@ AppAsset::register($this);
 <div class="probootstrap-loader"></div>
 <header role="banner" class="probootstrap-header">
     <div class="container">
-        <a href="index.html" class="probootstrap-logo">Connect</a>
+        <a href="index.html" class="probootstrap-logo">Roma</a>
         
         <a href="#" class="probootstrap-burger-menu visible-xs" ><i>Menu</i></a>
         <div class="mobile-menu-overlay"></div>
 
         <nav role="navigation" class="probootstrap-nav hidden-xs">
           <ul class="probootstrap-main-nav">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="#">Despre noi</a></li>
+            <li class="active"><?= Html::a('Home', ['/site/index'])?></li>
+            <li><?= Html::a('Despre noi', ['/site/about'])?></li>
             <li><?= Html::a('Cosmetica', ['/site/categories', 'id' => 1])?></li>
             <li><?= Html::a('Corporal', ['/site/categories', 'id' => 2])?></li>   
             <li><?= Html::a('Programe', ['/site/categories', 'id' => 3])?></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><?= Html::a('Contact', ['/site/contact'])?></li>
           </ul>
           <div class="extra-text visible-xs"> 
             <a href="#" class="probootstrap-burger-menu"><i>Menu</i></a>

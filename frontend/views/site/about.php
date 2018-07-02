@@ -2,15 +2,17 @@
 
 /* @var $this yii\web\View */
 
-use yii\helpers\Html;
-
-$this->title = 'About';
-$this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="site-about">
-    <h1><?= Html::encode($this->title) ?></h1>
 
-    <p>This is the About page. You may modify the following file to customize its content:</p>
+<div class="probootstrap-main">
 
-    <code><?= __FILE__ ?></code>
+<section class="probootstrap-section-half probootstrap-no-hover">
+   <div class="probootstrap-image" style="background-image: url(/mona/frontend/web/roma/img/image_2.jpg)"></div>
+   <div class="probootstrap-text">
+     <div class="probootstrap-inner probootstrap-animate">
+       <h1 class="heading">About Us</h1>
+       <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+     </div>
+   </div>
+ </section>
 </div>
